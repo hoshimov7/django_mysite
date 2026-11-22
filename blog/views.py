@@ -54,17 +54,18 @@ def post_share(request, post_id):
             post_url = request.build_absolute_uri(post.get_absolute_url())
 
             subject = (
-                f'{cd['name']}  recommentds you read \n'
+                f'{cd['name']}  recommentds you read '
                 f'{post.title}'
             )
             message = (
                 f"Read {post.title} at {post_url}\n\n "
                 f"{cd['name']}\'s comments: {cd['comment']}"
             )
+            from django.conf import settings
             send_mail(
                 subject,
                 message,
-                'shirinmohim8@gmail.com',
+                settings.DEFAULT_FROM_EMAIL,
                 [cd['to']]
             )
             send = True
