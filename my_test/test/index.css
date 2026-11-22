@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111827;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-title {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.card {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 12px;    
+}
+.card .title {
+    color: blue;
+}
+.card p {
+    color: gray;
+}
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}

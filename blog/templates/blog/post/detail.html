@@ -1,5 +1,6 @@
 {% extends 'blog/base.html' %}
 
+<<<<<<< HEAD
 
 
 {% block title %}{{ post.title }}{% endblock %}
@@ -9,17 +10,30 @@
 
 {% block content %}
 
+=======
+{% block title %} {{ post.title}} {% endblock %}
+
+{% block content %}
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df
     <h1>{{ post.title }}</h1>
     <p class="date">
         Published {{ post.publish }} by {{ post.author }}
     </p>
+<<<<<<< HEAD
     {{ post.body|linebreaks }}
     <p>
         <a href="{% url "blog:post_share" post.id %}">
+=======
+    {{  post.body|linebreaks }}
+
+    <p>
+        <a href="{% url 'blog:post_share' post.id %}">
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df
             Share this post
         </a>
     </p>
 
+<<<<<<< HEAD
 {% with comments.count as total_comments %}
     <h2>
         {{ total_comments }} comment{{ total_comments|pluralize }}
@@ -48,4 +62,6 @@
 
 
 
+=======
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df
 {% endblock %}

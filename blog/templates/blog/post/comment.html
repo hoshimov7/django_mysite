@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 {% extends "blog/base.html" %}
 
 {% block title %} Add a comment{% endblock title %}
+=======
+{% extends 'blog/base.html' %}
+
+{% block title %}{% endblock %}
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df
 
 
 {% block content %}
@@ -8,8 +14,14 @@
         <h2>Your comment has been added.</h2>
         <p><a href="{{ post.get_absolute_url }}">Back to the post</a></p>
     {% else %}
+<<<<<<< HEAD
         {% include "blog/post/includes/comment_form.html" %}
     {% endif %}
 
 {% endblock content %}
 
+=======
+        {% include 'blog/pot/includes/comment_form.html' %}
+    {% endif %}
+{% endblock %}
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df

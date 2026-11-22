@@ -1,9 +1,16 @@
 {% extends 'blog/base.html' %}
 
+<<<<<<< HEAD
 {% block title %}My Blog{% endblock %}
 
 
 {% block content %}
+=======
+{% block title %} MY Blog{% endblock %}
+
+{% block content %}
+
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df
     <h1>My Blog</h1>
     {% for post in posts %}
         <h2>
@@ -11,6 +18,7 @@
                 {{ post.title }}
             </a>
         </h2>
+<<<<<<< HEAD
         <p class='date' >
             Published {{ post.publish }} by {{ post.author }}
             {{ post.body|truncatewords:30|linebreaks }}
@@ -19,3 +27,17 @@
 
     {% include 'paginator.html' with page=page_obj %}
 {% endblock %}
+=======
+        <p class="date">
+            Published {{ post.publish }} by {{ post.author }}
+        </p>
+        {{ post.body|truncatewords:30|linebreaks }}
+        
+    {% endfor %}
+
+    {% include 'pagination.html'  with page=page_obj %}
+{% endblock  %}
+
+
+
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df

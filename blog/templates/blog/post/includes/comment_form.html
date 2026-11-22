@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 <h2>Add new Comment</h2>
 <form method='post' action="{% url "blog:post_comment" post.id %}">
     {% csrf_token %}
     {{ form.as_p }}
 
     <p><input type="submit" value="Add Comment"></p>
+=======
+<h2>Add a new comment</h2>
+<form action="{% url 'blog:post_comment'  post.id %}"  method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value = 'Add comment' ></p>
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df
 
 </form>

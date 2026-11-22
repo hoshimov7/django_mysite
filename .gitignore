@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 my_env/
 db.sqlite3
 .env
+=======
+venv/
+>>>>>>> 3d1a1926739a3ac0c3b9dbd03f0dcc8933cd52df
