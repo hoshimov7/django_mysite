@@ -1,4 +1,5 @@
 {% load blog_tags %}
+{% load count_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +19,12 @@
         <h2><a href="{% url 'blog:post_list' %}">My blog</a></h2>
         <p>This is my blog.
             I've written {% total_posts %} posts so far
+        
+            <hr>
+            {%  count_tag %}
         </p>
+        <h3>latest posts</h3>
+        {% show_latest_posts 3 %}
         
     </div>
     
