@@ -3,21 +3,10 @@
 
 
 <!-- 
-H  bu asosi h1 ello
-=======
-
-h2 ohsh
--------
-
-.    hi
-. this
-. that
-
-[google](https://google.com "this is link google")
+git  restore --staged  db.sqlite3
 
 
 
---------------------
 [1]: https://goodle.com "this is google"
 [2]: https://github.com/hoshimov7/ "my github profil"
 
